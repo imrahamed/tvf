@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  host: 'https://reqres.in/apie/',
+  httpErrors: {
+    0:   { 'msg': 'Server is not available'},
+    404: { 'msg': 'Page not Found'},
+    401: { 'msg': 'Not Authorized'}
+  }
 };
 
 /*

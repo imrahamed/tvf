@@ -1,0 +1,23 @@
+<div class="user-card">
+  <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting,actionEdit,actionEllipsis]">
+    <nz-card-meta nzTitle="{{user.first_name}} {{ user.last_name}}" nzDescription="" [nzAvatar]="avatarTemplate"></nz-card-meta>
+  </nz-card>
+  <ng-template #avatarTemplate>
+    <nz-avatar nzSrc="https://upload.wikimedia.org/wikipedia/en/b/b1/THE_VIRAL_FEVER_OFFICIAL_LOGO.jpg"></nz-avatar>
+  </ng-template>
+  <ng-template #coverTemplate>
+    <img alt="example" src="{{user.avatar ? user.avatar : 'https://upload.wikimedia.org/wikipedia/en/b/b1/THE_VIRAL_FEVER_OFFICIAL_LOGO.jpg' }}"/>
+  </ng-template>
+  <ng-template #actionSetting>
+    <i class="anticon anticon-setting"></i>
+  </ng-template>
+  <ng-template #actionEdit>
+    <i (click)='edituser()' class="anticon anticon-edit"></i>
+  </ng-template>
+  <ng-template #actionEllipsis>
+      <i nz-popconfirm nzTitle="Are you sure delete this user?"
+       (nzOnConfirm)="deleteuser()"
+       (nzOnCancel)="cancel()" nzPlacement="top" 
+       class="anticon anticon-delete"></i>
+  </ng-template>
+</div>
