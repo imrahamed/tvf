@@ -7,7 +7,7 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./user-card.component.css']
 })
 export class UserCardComponent implements OnInit {
-  @Input() user: any;
+  @Input() user: any = {};
   @Output() edit = new EventEmitter<boolean>();
   constructor(private userservice: UsersService) {
     

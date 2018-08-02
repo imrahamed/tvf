@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  host: 'https://reqres.in/apie/',
+  host: 'https://reqres.in/api/',
   httpErrors: {
     0:   { 'msg': 'Server is not available'},
     404: { 'msg': 'Page not Found'},
