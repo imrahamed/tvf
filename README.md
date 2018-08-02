@@ -1,27 +1,59 @@
-# TvfAssignment
+# TVF - assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+# App screens!
 
-## Development server
+  - Paginate - https://www.useloom.com/share/7153c110cecf4d6e957d4018e29b8a63
+  - add - https://www.useloom.com/share/cb62e1c2eb4d47b4a0ad42d7d513e2d1
+  - Edit -https://www.useloom.com/share/b615901ca2534fe485e0fac7e744c0e7
+  - delete - https://www.useloom.com/share/4c3beaef7478494caec490257131ed37
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Installation
 
-## Code scaffolding
+Install the dependencies and devDependencies and start the server.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+$ cd tvf-assignment
+$ npm install 
+$ ng serve
+```
 
-## Build
+### Plugins
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+| Plugin | Usage |
+| ------ | ------ |
+| ng-zorro | [A Bootstrap UI library] |
+| Github | [Source Control] |
+| PureCSS| [To remove Unused CSS] |
+| Gulp | [to run purecss on dist build] |
+| ng HttpInterceptor | [to Handle Network errors] |
+| https://reqres.in/ | [Mock Backend] |
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Development
+to run development server
+```sh
+ng serve
+```
+### test
+To run tests
 
-## Running end-to-end tests
+```sh
+ng test
+```
+### Build
+Build processs, i am using pure css to remove unwanted css after build, during build uglifying and chunking has beed taken care by aot compiler
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```sh
+npm run build
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Todos
+
+ - Write MORE Tests
+ - Add Night Mode
+
+License
+----
+
+MIT
